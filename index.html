@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div {
+      border: 3px solid rgb(230, 19, 19)
+    }
+
+    body {
+      background-color: rgb(89, 181, 242);
+      color: aliceblue;
+    }
+
+    button {
+      color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Missles</h1>
+  <div><button onclick="Get()">Get</button></div>
+  <div>
+    <input id="id" type="number" placeholder="Enter an ID">
+    <input id="city" placeholder="Enter a city">
+    <!-- <input id="sdate" type="date" placeholder="Enter start date"> -->
+    <!-- <input id="edate" type="date" placeholder="Enter end date"> -->
+    <input id="loc" type="text" placeholder="Enter a location">
+    <button onclick="Post()">Post</button>
+  </div>
+  <div>
+    <button onclick="GetPlace()">GetPlace</button>
+  </div>
+  <input id="cityName" placeholder="Enter an city name">
+
+  <button onclick="GetbyPlace()">GetbyPlace</button>
+
+  <div id="miss"></div>
+  <script>
+    function Get() {
+      fetch("http://localhost:5169/Missile")
+        .then(function (response) {
+          // The response is a Response instance.
+          // You parse the data into a useable format using `.json()`
+          return response.json();
+        }).then(function (json) {
+          // `data` is the parsed version of the JSON returned from the above endpoint.
+          console.log(json);
+
+          for (let i = 0; i < Object.keys(json).length; i++) {
+            let div = document.createElement("div")
+            div.setAttribute("class", "div")
+            let p1 = document.createElement("p")
+            let p2 = document.createElement("p")
+            // let p3 = document.createElement("p")
+            // let p4 = document.createElement("p")
+            let p5 = document.createElement("p")
+            //console.log("knlknm")
+            console.log("json[i]: ", json[i].patriotmissile)
+            p1.textContent = "patriotmissile: " + json[i].patriotmissile
+            p2.textContent = "city: " + json[i].location.city
+            // p3.textContent = "date: " + json[i].location.date
+            // p4.textContent = "end date: " + json[i].location.endDate
+            p5.textContent = "location: " + json[i].location.location
+
+            div.appendChild(p1)
+            div.appendChild(p2)
+            // div.appendChild(p3)
+            // div.appendChild(p4)
+            div.appendChild(p5)
+            document.getElementById("miss").appendChild(div)
+          }
+
+
+        });
+    }
+    function Post() {
+
+      var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+  
+      let p1 = document.getElementById("id").value;
+      let p2 = document.getElementById("city").value;
+      // let p3 = document.getElementById("sdate").value;
+      // let p4 = document.getElementById("edate").value;
+      let p5 = document.getElementById("loc").value;
+    console.log(p1);
+    console.log(p2);
+    // console.log(p3);
+    // console.log(p4);
+    console.log(p5);
+      // let data = {
+      //   "patriotmissile": p1,
+      //   "location": {
+      //     "city": p2,
+      //     "date": "2023-10-31T17:55:40.678Z",
+      //     "endDate": "2023-10-31T17:55:40.678Z",
+      //     "location": p5
+      //   }
+      // }
+
+      let data = {
+        "patriotmissile": p1,
+        "location": {
+          "city": p2,
+          "date": "2023-10-31T17:55:40.678Z",
+          "endDate": "2023-10-31T17:55:40.678Z",
+          "location": p5
+        }
+      }
+      // JSON.stringify(data);
+       console.log('data: ',data)
+      // fetch("http://localhost:5169/Missile")
+      //   .then(function (response) {
+      //     // The response is a Response instance.
+      //     // You parse the data into a useable format using `.json()`
+      //     return response.json();
+      //   }).then(function (json) {
+      //   });
+      //     // `data` is the parsed version of the JSON returned from the above endpoint.
+      //    // console.log(json);
+      var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: data,
+        redirect: 'follow'
+      };
+      // console.log(requestOptions);
+      fetch("http://localhost:5169/Missile",  {
+        "patriotmissile": p1,
+        "location": {
+          "city": p2,
+          "date": "2023-10-31T17:55:40.678Z",
+          "endDate": "2023-10-31T17:55:40.678Z",
+          "location": p5
+        }
+      })
+        .then(response => response.text())
+        .then(result => console.log("result: ",result))
+        .catch(error => console.log('error', error));
+    }
+    function GetPlace() {
+      fetch("http://localhost:5169/Missile")
+        .then(function (response) {
+          return response.json();
+        }).then(function (json) {
+          for (let i = 0; i < Object.keys(json).length; i++) {
+            let div = document.createElement("div")
+            div.setAttribute("class", "div")
+            let p1 = document.createElement("p")
+            p1.textContent = "city: " + json[i].location.city
+            div.appendChild(p1)
+            document.getElementById("miss").appendChild(div)
+          }
+
+
+        });
+    }
+
+    function GetbyPlace() {
+      fetch("http://localhost:5169/Missile")
+        .then(function (response) {
+          return response.json();
+        }).then(function (json) {
+          console.log(json);
+
+          for (let i = 0; i < Object.keys(json).length; i++) {
+
+            let div = document.createElement("div")
+            let p = document.getElementById("cityName").value;
+            if (json[i].location.city == p) {
+              div.setAttribute("class", "div")
+              let p1 = document.createElement("p")
+              let p2 = document.createElement("p")
+              // let p3 = document.createElement("p")
+              // let p4 = document.createElement("p")
+              let p5 = document.createElement("p")
+
+              p1.textContent = "patriotmissile: " + json[i].patriotmissile
+              p2.textContent = "city: " + json[i].location.city
+              // p3.textContent = "date: " + json[i].location.date
+              // p4.textContent = "end date: " + json[i].location.endDate
+              p5.textContent = "location: " + json[i].location.location
+
+              div.appendChild(p1)
+              div.appendChild(p2)
+              // div.appendChild(p3)
+              // div.appendChild(p4)
+              div.appendChild(p5)
+              document.getElementById("miss").appendChild(div)
+            }
+          }
+
+
+        });
+    }
+
+  </script>
+</body>
+
+</html>

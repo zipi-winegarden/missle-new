@@ -1,0 +1,12 @@
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiModel\bin\Debug\net6.0\ApiModel.deps.json
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiModel\bin\Debug\net6.0\ApiModel.dll
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiModel\bin\Debug\net6.0\ApiModel.pdb
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiModel\obj\Debug\net6.0\ApiModel.csproj.AssemblyReference.cache
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiModel\obj\Debug\net6.0\ApiModel.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiModel\obj\Debug\net6.0\ApiModel.AssemblyInfoInputs.cache
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiModel\obj\Debug\net6.0\ApiModel.AssemblyInfo.cs
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiModel\obj\Debug\net6.0\ApiModel.csproj.CoreCompileInputs.cache
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiModel\obj\Debug\net6.0\ApiModel.dll
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiModel\obj\Debug\net6.0\refint\ApiModel.dll
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiModel\obj\Debug\net6.0\ApiModel.pdb
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiModel\obj\Debug\net6.0\ref\ApiModel.dll

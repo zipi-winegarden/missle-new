@@ -1,0 +1,15 @@
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\bin\Debug\net6.0\ApiService.deps.json
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\bin\Debug\net6.0\ApiService.dll
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\bin\Debug\net6.0\ApiService.pdb
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\bin\Debug\net6.0\ApiModel.dll
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\bin\Debug\net6.0\ApiModel.pdb
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\obj\Debug\net6.0\ApiService.csproj.AssemblyReference.cache
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\obj\Debug\net6.0\ApiService.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\obj\Debug\net6.0\ApiService.AssemblyInfoInputs.cache
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\obj\Debug\net6.0\ApiService.AssemblyInfo.cs
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\obj\Debug\net6.0\ApiService.csproj.CoreCompileInputs.cache
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\obj\Debug\net6.0\ApiService.csproj.CopyComplete
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\obj\Debug\net6.0\ApiService.dll
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\obj\Debug\net6.0\refint\ApiService.dll
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\obj\Debug\net6.0\ApiService.pdb
+Y:\Groups\Group_2\וינגרטן  צפורה\dotnet\les5\Api\ApiService\obj\Debug\net6.0\ref\ApiService.dll
